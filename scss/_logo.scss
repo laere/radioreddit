@@ -1,0 +1,28 @@
+.mainLogo {
+  width: 280px;
+  height: 120px;
+  padding: 16px;
+  background-color: $mainblack;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    margin: 16px 0;
+    &:hover {
+      animation: grow 0.3s ease-out;
+      animation-fill-mode: forwards;
+      cursor: pointer;
+    }
+  }
+
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1.025);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
