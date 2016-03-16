@@ -1,5 +1,27 @@
-.mainNavbar {
-  height: 120px;
+nav {
+  height: 80px;
+  width: 1620px;
   background-color: $white;
   border-bottom: 1px solid $orange;
+  color: $orange;
+  float: right;
+
+  .mainNavbar {
+    align-self: center;
+    padding-left: 64px;
+
+    .navItem {
+      height: 80px;
+      display: inline-block;
+      padding: 28px;
+      font-size: 1.75rem;
+      &:hover {
+        background-color: $orange;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
+  }
+
 }

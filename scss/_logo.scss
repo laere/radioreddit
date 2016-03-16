@@ -1,21 +1,18 @@
 .mainLogo {
-  width: 280px;
-  height: 120px;
-  padding: 16px;
+  width: 300px;
+  height: 80px;
   background-color: $mainblack;
+  padding: 16px;
   position: absolute;
   top: 0;
   left: 0;
+  @include flex-center;
 
-  img {
-    margin: 16px 0;
-    &:hover {
+  img:hover {
       animation: grow 0.3s ease-out;
       animation-fill-mode: forwards;
       cursor: pointer;
     }
-  }
-
 }
 
 @keyframes grow {
