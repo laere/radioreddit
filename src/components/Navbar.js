@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import NavLink from './NavLink';
-import Logo from './Logo';
-import Input from './Input';
+
 
 const Navbar = () => {
   return (
     <header>
-      <nav role="navigation">
-        <Logo />
+      <nav role="navigation row">
+        <img src="http://radioreddit.com/images/logo.svg" alt="radio reddit" width="300px"/>
         <div className="mainNavbar">
           <NavLink header="About" />
           <NavLink header="Channels" />
@@ -15,8 +15,11 @@ const Navbar = () => {
           <NavLink header="Library" />
           <NavLink header="Upload" />
         </div>
-        <Input style="mainNavbarSearchbar" type="text" text="Search..."/>
-        <Input style="mainNavbarLogIn" type="submit" text="Log In" />
+        <div className="mainNavbarIcons">
+          <i className="fa fa-search fa-lg"/>
+          <i className="fa fa-user fa-lg"/>
+          <button>Log In</button>
+        </div>
       </nav>
     </header>
   );

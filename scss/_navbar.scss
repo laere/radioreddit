@@ -1,15 +1,12 @@
 
-nav {
-  padding: 8px;
+header {
   background-color: $mainblack;
   color: $white;
-  height: 120px;
+  padding: 0px;
+  margin-bottom: 32px;
+
   & div {
     display: inline-block;
-  }
-
-  .mainLogo {
-    padding-left: 32px;
   }
 
   input[type=submit] {
@@ -20,24 +17,47 @@ nav {
     border-radius: 5px;
   }
 
+  img {
+    padding-left: 64px;
+  }
+
+  button {
+    background-color: $orange;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 24px;
+    margin-left: 8px;
+    &:hover {
+      background-color: $white;
+      border: 1px solid $orange;
+      color: $orange;
+    }
+  }
 
   .mainNavbar {
-    margin: 0 128px;
+    padding-left: 156px;
     .navItem {
-      padding: 32px 48px;
+      padding: 32px 40px;
       //background-color: red;
       &:hover {
         animation: fadein .2s ease-out;
         animation-fill-mode: forwards;
         background-color: $orange;
-        border-radius: 5px;
         cursor: pointer;
       }
     }
   }
 
-  .mainNavbarSearchbar {
-
+  .mainNavbarIcons {
+    padding-left: 280px;
+    vertical-align: middle;
+    i {
+      margin-left: 42px;
+      &:nth-child(1):hover {
+      color: $orange;
+      cursor: pointer;
+      }
+    }
   }
 
 }

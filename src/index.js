@@ -11,6 +11,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 // CONTAINERS
 import App from './app/app';
+import About from './components/About';
 //  STATE
 import rootReducer from './reducers/rootReducer';
 // Store with middleware.
@@ -30,7 +31,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
+        <IndexRoute component={About} />
       </Route>
     </Router>
   </Provider>,
-  document.querySelector('.container'));
+  document.querySelector('.container-fluid'));
