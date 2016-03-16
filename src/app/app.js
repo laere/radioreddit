@@ -9,7 +9,7 @@ export default class App extends Component {
     <div>
       <Logo />
       <Navbar />
-      
+      {this.props.children}
     </div>
     );
   }

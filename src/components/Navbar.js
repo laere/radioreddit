@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import NavLink from './NavLink';
 
 const Navbar = () => {
   return (
     <nav role="navigation">
       <div className="mainNavbar">
-        <div className="navItem"><span>About</span></div>
-        <div className="navItem"><span>Channels</span></div>
-        <div className="navItem"> <span>Library</span></div>
-        <div className="navItem"><span>Hot</span></div>
-        <div className="navItem"><span>Upload</span></div>
+        <NavLink header="About" />
+        <NavLink header="Channels" />
+        <NavLink header="Hot" />
+        <NavLink header="Library" />
+        <NavLink header="Upload" />
+        <div className="mainNavbarSearchbar">
+          <input type="text" placeholder="Search..."/>
+        </div>
       </div>
     </nav>
   );

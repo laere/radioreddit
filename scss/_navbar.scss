@@ -5,23 +5,41 @@ nav {
   border-bottom: 1px solid $orange;
   color: $orange;
   float: right;
+  position: relative;
 
   .mainNavbar {
-    align-self: center;
-    padding-left: 64px;
+    padding-left: 72px;
 
     .navItem {
-      height: 80px;
       display: inline-block;
-      padding: 28px;
+      padding: 26.5px 36px;
       font-size: 1.75rem;
       &:hover {
         background-color: $orange;
         color: $white;
         cursor: pointer;
+        animation: fadein .2s ease-in;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .mainNavbarSearchbar {
+      position: absolute;
+      right: 100px;
+      top: 26px;
+      input {
+        padding: 4px 16px;
+        &:focus {
+          outline: none;
+        }
       }
     }
 
   }
 
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

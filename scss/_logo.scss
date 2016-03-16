@@ -8,18 +8,4 @@
   left: 0;
   @include flex-center;
 
-  img:hover {
-      animation: grow 0.3s ease-out;
-      animation-fill-mode: forwards;
-      cursor: pointer;
-    }
-}
-
-@keyframes grow {
-  50% {
-    transform: scale(1.025);
-  }
-  100%{
-    transform: scale(1.05);
-  }
 }
