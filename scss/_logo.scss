@@ -1,11 +1,3 @@
 .mainLogo {
-  width: 300px;
-  height: 80px;
-  background-color: $mainblack;
-  padding: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  @include flex-center;
-
+  padding-left: 32px;
 }

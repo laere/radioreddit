@@ -8,9 +8,4 @@ const NavLink = (props) => {
   );
 };
 
-NavLink.propTypes = {
-  header: React.PropTypes.string,
-  style: React.PropTypes.string
-};
-
 export default NavLink;

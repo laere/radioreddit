@@ -1,39 +1,42 @@
+
 nav {
-  height: 80px;
-  width: 1620px;
-  background-color: $white;
-  border-bottom: 1px solid $orange;
-  color: $orange;
-  float: right;
-  position: relative;
+  padding: 8px;
+  background-color: $mainblack;
+  color: $white;
+  height: 120px;
+  & div {
+    display: inline-block;
+  }
+
+  .mainLogo {
+    padding-left: 32px;
+  }
+
+  input[type=submit] {
+    margin-left: 64px;
+    background-color: $orange;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
 
   .mainNavbar {
-    padding-left: 72px;
-
+    margin: 0 128px;
     .navItem {
-      display: inline-block;
-      padding: 26.5px 36px;
-      font-size: 1.75rem;
+      padding: 32px 48px;
+      //background-color: red;
       &:hover {
-        background-color: $orange;
-        color: $white;
-        cursor: pointer;
-        animation: fadein .2s ease-in;
+        animation: fadein .2s ease-out;
         animation-fill-mode: forwards;
+        background-color: $orange;
+        border-radius: 5px;
+        cursor: pointer;
       }
     }
+  }
 
-    .mainNavbarSearchbar {
-      position: absolute;
-      right: 100px;
-      top: 26px;
-      input {
-        padding: 4px 16px;
-        &:focus {
-          outline: none;
-        }
-      }
-    }
+  .mainNavbarSearchbar {
 
   }
 

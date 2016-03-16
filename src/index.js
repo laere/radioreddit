@@ -30,11 +30,6 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
-        {/*<IndexRoute component={About} />
-        <Route path="channels" component={Channels} />
-        <Route path="library" component={Library} />
-        <Route path="hot" component={Hot} />
-        <Route path="upload" component={Upload} />*/}
       </Route>
     </Router>
   </Provider>,
