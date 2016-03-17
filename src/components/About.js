@@ -13,6 +13,9 @@ const About = () => {
 
             <h2>Musicians have the power:</h2>
             <p>If you make music, we want to help you get it to the masses. It doesn't matter if you're 18 or 80, a bedroom musician or a studio master. We want to hear your stuff. Just upload your songs to Radio for Reddit and we make that music accessible to our listeners across the globe through our dynamic music streams and easy-to-search database.</p>
+            {/*<div>
+              <img src="http://31.media.tumblr.com/b9259f0b4d74aa8dc73fa3f502ca5f97/tumblr_n0baa7Vtt41s8nlyfo1_500.gif" alt="musical fun" width="700px"/>
+            </div>*/}
           </section>
           <section className="col-md-4">
             <h2>Listeners have the power:</h2>

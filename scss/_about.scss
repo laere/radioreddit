@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0px 64px 64px;
   width: 90%;
-  
+
   a {
     color: $orange;
     text-decoration: underline;
@@ -12,6 +12,10 @@
 
   section:nth-child(2) {
     padding-left: 64px;
+  }
+
+  div img {
+    width: 100%;
   }
 
 }
