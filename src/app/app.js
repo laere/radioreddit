@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from '../components/Logo';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import '../../scss/main.scss';
 
@@ -9,6 +9,7 @@ export default class App extends Component {
     <div>
       <Navbar />
       {this.props.children}
+      <Footer />
     </div>
     );
   }

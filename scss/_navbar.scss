@@ -3,21 +3,20 @@ header {
   background-color: $mainblack;
   color: $white;
   padding: 0px 64px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
 
-  input[type=submit] {
-    margin-left: 64px;
-    background-color: $orange;
+  .mainNavbarSearch {
+    color: black;
+    padding: 4px 8px;
+    border-radius: 10px;
     border: none;
-    padding: 8px;
-    border-radius: 5px;
   }
 
-  button {
+  .mainNavbarLogin {
     background-color: $orange;
     border-radius: 50px;
     border: none;
@@ -30,7 +29,7 @@ header {
   }
 
   .navItem {
-    padding: 32px 40px;
+    padding: 32px;
     display: inline-block;
     //background-color: red;
     &:hover {
@@ -41,12 +40,8 @@ header {
     }
   }
 
-  i {
+  .fa-user {
     margin-left: 36px;
-    &:nth-child(1):hover {
-      color: $orange;
-      cursor: pointer;
-    }
   }
 
 }

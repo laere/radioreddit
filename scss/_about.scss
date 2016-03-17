@@ -1,3 +1,12 @@
 .aboutSection {
   text-align: justify;
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  a {
+    color: $orange;
+    text-decoration: underline;
+  }
+
 }

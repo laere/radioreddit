@@ -14,10 +14,10 @@ const Navbar = () => {
         <NavLink header="Library" />
         <NavLink header="Upload" />
       </nav>
-      <div className="mainNavbarIcons">
-        <i className="fa fa-search fa-lg"/>
+      <div>
+        <input className="mainNavbarSearch" type="text" placeholder="Search..." />
         <i className="fa fa-user fa-lg"/>
-        <button>Log In</button>
+        <button className="mainNavbarLogin">Log In</button>
       </div>
     </header>
   );
